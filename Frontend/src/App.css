@@ -1,0 +1,186 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+    position: relative;
+    /*background: url("../src/fba7da61.png") repeat;*/
+    padding-bottom: 40px;
+    background: #f5f5f5;
+}
+
+#msg, #err {
+    color: #bb0000;
+    width: 300px;
+    position: fixed;
+    top: 42px;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 1;
+    background: #d8d8d8;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+#msg:empty, #err:empty {
+    display: none;
+}
+
+#msg {
+    color: green;
+}
+
+.edit .onView, .onEdit {
+    display: none;
+}
+
+.edit .onEdit {
+    display: initial;
+}
+
+.cardBlock {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.imagesContainer {
+    height: 120px;
+}
+
+.imageBox {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-right: 4px;
+}
+
+.imageTile {
+    height: 100px;
+    width: 100px;
+}
+
+.imageTile img {
+    border-radius: 5px;
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+}
+
+.multiImage, .profileImage {
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+    font-size: 10px;
+}
+
+.multiImage {
+    border: none;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.removeImageButton {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-align: center;
+    font-size: small;
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.uploadButton {
+    height: 26px;
+    line-height: 20px;
+    font-size: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.form-group label {
+    margin-bottom: 0;
+}
+
+.messages {
+    max-height: 300px;
+    overflow: auto;
+}
+
+.currMessage {
+    background: rgba(0, 136, 0, 0.2);
+}
+
+.nav-link, .inputLabel, .mono {
+    font-family: "Andale Mono", serif;
+}
+
+.inputLabel {
+    margin: 5px 5px 2px 0;
+    font-size: 12px;
+    color: #343434;
+    letter-spacing: 0.1px;
+}
+
+.divider {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-right: 1px solid var(--gray);
+}
+
+.currMessage {
+    background: rgba(0, 136, 0, 0.2);
+}
+
+.pageNum {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border: 1px solid var(--green);
+    text-align: center;
+    color: var(--green);
+}
+
+.pageNum.active {
+    font-weight: bolder;
+}
+
+:root {
+    --green: #0CAA41;
+}
+
+.btn-primary:hover, .btn-primary {
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+.bg-dark {
+    background-color: var(--green) !important;
+}
+
+select, input[type=text], input[type=password], input[type=number] {
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+input[type=password]:focus, input[type=number]:focus, input[type=text]:focus, select:focus {
+    outline: none
+}
+
+a {
+    color: #0051bb;
+}
+
+.nav-link {
+    font-size: smaller;
+    font-weight: bolder;
+}
